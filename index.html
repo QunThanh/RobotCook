@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooker Robot</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--font-word-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jost:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- onload="onloadWeb()" -->
+
+  <body onload="onloadWeb()">
+    <!-- begin navigation -->
+    <div class="nav">
+      <!-- nav_home -->
+      <div class="home_content">
+        <div class="home_name">Cooker-Robot</div>
+        <i class="bx bx-cookie"></i>
+      </div>
+      <!---------->
+      <i class="bx bx-menu" id="btn-nav"></i>
+      <!-- nav-list -->
+      <ul class="nav_list">
+        <li>
+          <a href="#container-menu">
+            <i class="bx bx-food-menu"></i>
+            <div id="select-nav">--</div>
+            <p class="nav_text_menu">Menu</p>
+            <div id="select-nav">--</div>
+          </a>
+          <p class="hide_nav">Menu</p>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bowl-rice"></i>
+            <div id="select-nav">--</div>
+            <p class="nav_text_menu">Food</p>
+            <div id="select-nav">--</div>
+          </a>
+          <p class="hide_nav">Food</p>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-drink"></i>
+            <div id="select-nav">--</div>
+            <p class="nav_text_menu">Beverage</p>
+            <div id="select-nav">--</div>
+          </a>
+          <p class="hide_nav">Beverage</p>
+        </li>
+      </ul>
+      <!--------->
+    </div>
+    <!-- end navigation -->
+
+    <!-- begin container content -->
+    <div class="container">
+      <!-- container home -->
+      <div class="container_home">
+        <div class="home_header">
+          <div class="header_title">
+            <div class="head_text">Recommend</div>
+            <p>What would you like to eat?</p>
+          </div>
+          <div class="header_content">
+            <div class="head_text">Select</div>
+            <div class="name_food">
+              <p id="id-food">03</p>
+              <p id="id-name-food">Russian Salad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home_img">
+          <div class="img_pick">cook now !!!</div>
+          <img
+            id="id-img-food"
+            src="https://bepmina.vn/wp-content/uploads/2021/08/cach-lam-salad-nga.jpeg"
+            alt="img_food"
+          />
+        </div>
+      </div>
+      <!-------------------->
+
+      <!-- container menu -->
+      <div id="container-menu">
+        <!-- left content -->
+        <div class="left_content">
+          <!-- header menu -->
+          <div class="header_menu">
+            <div class="user">
+              <i class="bx bx-user-circle"></i>
+              <p id="id-user-name">Admin</p>
+            </div>
+
+            <div class="cart">
+              <i class="bx bx-cart"></i>
+              <div id="id-num-cart">3</div>
+              <!-- active -->
+              <div class="cart_content">
+                <div class="arrow_up"></div>
+                <div id="id-cart-content">
+                  <div class="sub_item">
+                    <div class="cart_food_name">
+                      Russian Salad
+                      <div class="cart_food_num">2</div>
+                      <div class="add">+</div>
+                      <div class="subtract">-</div>
+                      <div class="delete">x</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_sum">
+                  SUM:
+                  <p id="id-sum-in-cart">3</p>
+                </div>
+                <div id="btn-cook-in-cart">Cook</div>
+              </div>
+              <!---->
+            </div>
+          </div>
+          <!-------------------->
+
+          <!-- content menu -->
+          <div class="text_content">
+            <!-- category -->
+            <div class="menu">Menu</div>
+            <div id="category">
+              <div>- Meat</div>
+            </div>
+          </div>
+          <!-------------------->
+
+          <!-- fooder menu -->
+          <div class="footer_menu">
+            <a href="https://www.facebook.com/">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="https://accounts.google.com/">Contact us</a>
+          </div>
+          <!-------------------->
+        </div>
+
+        <!-- right content -->
+        <div class="right_content">
+          <div id="btn-next-item">
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+          <div id="menu-food-name">
+            <div class="imgbg">
+              <img
+                src="https://bepmina.vn/wp-content/uploads/2021/08/cach-lam-salad-nga.jpeg"
+                alt=""
+              />
+              <i class="bx bxs-plus-circle">
+                <div class="title_food_name">Russian Salad</div>
+              </i>
+            </div>
+            <div class="imgbg">
+              <img
+                src="https://scr.vn/wp-content/uploads/2020/09/Hinh-anh-dep-mang-thong-dep-y-nghia.jpg"
+                alt=""
+              />
+              <i class="bx bxs-plus-circle">
+                <div class="title_food_name">Soup Pie</div>
+              </i>
+            </div>
+            <div class="imgbg">
+              <img
+                src="https://bepmina.vn/wp-content/uploads/2021/08/cach-lam-salad-nga.jpeg"
+                alt=""
+              />
+              <i class="bx bxs-plus-circle">
+                <div class="title_food_name">Russian Salad</div>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------->
+
+      <!-- container food -->
+      <div class="container_food"></div>
+      <!-------------------->
+
+      <!-- container drinks -->
+      <div class="container_beverage"></div>
+      <!-------------------->
+    </div>
+    <!-- end container content -->
+
+    <!-- test scrips -->
+    <script src="./sha256.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <!----------------->
+  </body>
+</html>
